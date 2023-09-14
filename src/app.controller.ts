@@ -8,7 +8,6 @@ export class AppController {
 
     @Get('/newVisitor')
     async getNewVisitor(): Promise<string> {
-        const visitorData: string = await this.appService.newVisitor();
-        return visitorData;
+        return await this.appService.newVisitor();
     }
 }

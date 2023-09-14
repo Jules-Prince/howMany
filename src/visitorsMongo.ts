@@ -16,7 +16,7 @@ async function addNewVisitor() {
     console.log(newUser);
 
 
-    await newUser.save().then(e => {
+    await newUser.save().then(() => {
         console.log('Visitor saved successfully');
 
     }, err => {
